@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientResilient", "HttpClientResilient\HttpClientResilient.csproj", "{FBEF5610-5D96-488A-A873-4E42B9FC8C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0067F56C-E602-42D4-B9CE-87419D94AA74}
+	EndGlobalSection
+EndGlobal
