@@ -11,7 +11,10 @@
 
         public async Task<HttpResponseMessage> SendAsyncResilient(HttpRequestMessage request)
         {
-            var result = await _httpClient.SendAsync(request);
+            var result = await _retryPolicy.ExecuteAsync<HttpResponseMessage>(async () => 
+            { 
+                return await _httpClient.SendAsync(request);
+            });
 
             return result;
         }

@@ -1,5 +1,6 @@
 ﻿using Polly;
 using Polly.Retry;
+using System.Net;
 
 namespace HttpClientResilient
 {
