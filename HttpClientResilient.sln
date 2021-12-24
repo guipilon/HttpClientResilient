@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientResilient", "HttpClientResilient\HttpClientResilient.csproj", "{FBEF5610-5D96-488A-A873-4E42B9FC8C31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientResilient", "HttpClientResilient\HttpClientResilient.csproj", "{FBEF5610-5D96-488A-A873-4E42B9FC8C31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientResilient.Test", "HttpClientResilient.Integration.Test\HttpClientResilient.Test.csproj", "{70B5A677-2692-41FB-B88D-C80BC7EEDCE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBEF5610-5D96-488A-A873-4E42B9FC8C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B5A677-2692-41FB-B88D-C80BC7EEDCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B5A677-2692-41FB-B88D-C80BC7EEDCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B5A677-2692-41FB-B88D-C80BC7EEDCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B5A677-2692-41FB-B88D-C80BC7EEDCE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

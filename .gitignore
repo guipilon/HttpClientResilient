@@ -5,3 +5,5 @@
 /.vs
 /HttpClientResilient/bin/Debug/net6.0
 /HttpClientResilient/obj
+/HttpClientResilient.Integration.Test/bin/Debug/net6.0
+/HttpClientResilient.Integration.Test/obj
