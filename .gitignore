@@ -8,3 +8,5 @@
 /HttpClientResilient.Test/bin/Debug/net6.0
 /HttpClientResilient.Test/obj/Debug/net6.0/ref/HttpClientResilient.Integration.Test.dll
 /HttpClientResilient.Test/obj
+/HttpClientResilient.Unit.Test/bin/Debug/net6.0
+/HttpClientResilient.Unit.Test/obj

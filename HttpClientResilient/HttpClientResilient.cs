@@ -9,9 +9,9 @@ namespace HttpClientResilient
         private readonly HttpClient _httpClient;
         private AsyncRetryPolicy _retryPolicy;
 
-        public HttpClientResilient() 
+        public HttpClientResilient(HttpClient httpClient) 
         {
-            _httpClient = new HttpClient();
+            _httpClient = httpClient;
             _retryPolicy = Policy
                 .Handle<Exception>()
                 .WaitAndRetryAsync(2, retryAttempt => {

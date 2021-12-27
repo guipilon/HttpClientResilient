@@ -8,10 +8,19 @@ namespace HttpClientResilient.Integration.Test
     [TestClass]
     public class HttpClientResilientTests
     {
+        private static HttpClient _httpClient;
+
+        [ClassInitialize]
+        public static void ClassInitializeAttribute(TestContext testContext) 
+        { 
+            _httpClient = new HttpClient();
+        }
+
         [TestMethod]
         public void MakeGetRequest_Successful()
         {
-            HttpClientResilient client = new HttpClientResilient();
+
+            HttpClientResilient client = new HttpClientResilient(_httpClient);
 
             HttpRequestMessage request = new HttpRequestMessage();
 
@@ -27,7 +36,7 @@ namespace HttpClientResilient.Integration.Test
         [TestMethod]
         public async Task MakeGetRequestAsync_SuccessfulAsync()
         {
-            HttpClientResilient client = new HttpClientResilient();
+            HttpClientResilient client = new HttpClientResilient(_httpClient);
 
             HttpRequestMessage request = new HttpRequestMessage();
 
@@ -38,6 +47,12 @@ namespace HttpClientResilient.Integration.Test
 
             Assert.IsNotNull(response);
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [ClassCleanup]
+        public static void ClassCleanupAttribute()
+        {
+            _httpClient.Dispose();
         }
     }
 }
